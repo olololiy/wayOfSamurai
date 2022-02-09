@@ -1,0 +1,20 @@
+
+.nav {
+    grid-area: n;
+    background-color: burlywood;
+}
+
+.item {
+    color: white;
+}
+
+.item.active {
+    color: gold;
+}
+/* nav{
+    background-color: burlywood;
+}
+
+.item {
+    background-color: chocolate;
+} */

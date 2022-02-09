@@ -1,0 +1,13 @@
+.profile{
+    /* padding: 0; */
+    /* margin: 0; */
+    background-color: sadlebrown;
+}
+h2 {
+    grid-area: p;
+    background-color: royalblue;
+}
+.img{
+    height: 200px;
+    
+}

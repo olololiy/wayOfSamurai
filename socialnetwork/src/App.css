@@ -1,4 +1,6 @@
 .app-wrapper {
+  /* margin: 0 ; */
+  /* padding: 0; */
   display: grid;
   grid-template-areas: 
   "h h"
