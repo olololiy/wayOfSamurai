@@ -8,15 +8,18 @@ import {Routes, Route} from "react-router-dom";
 import WelcomePage from "./components/BodyWrapper/NavBar/Content/WelcomePage/WelcomePage";
 import Layout from "./components/BodyWrapper/Layout/Layout";
 import Dialogs from "./components/BodyWrapper/NavBar/Content/Dialogs/Dialogs";
+import Friends from "./components/BodyWrapper/NavBar/Content/Friends/Friends";
+
 
 function App(props) {
-
+    console.log(props)
     return (
         <Routes>
             <Route path='/' element={<Layout/>}>
                 <Route index element={<WelcomePage/>}/>
                 <Route path='/profile' element={<Profile/>}/>
-                <Route path='/dialogs' element={<Dialogs dialogs={props.dialogs} messages={props.messages} />}/>
+                <Route path='/dialogs' element={<Dialogs state={props.dialogsPage} />}/>
+                <Route path='/friends' element={<Friends/>}/>
                 <Route path='*' element={<div>Page not found</div>}/>
             </Route>
         </Routes>

@@ -9,6 +9,7 @@ function Layout() {
             <Header/>
             <NavBar/>
             <ContentOfPage />
+        {/*    не понимаю как работает Outlet*/}
 
         </div>
     )
